@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GrooveGuide - Mood-based Song Recommendations</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="full-page">
+        <div class="white-box">
+            <div class="container">
+                <div class="logo">
+                    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Your Logo">
+                </div>
+                <h1 class="text-center">GrooveGuide</h1>
+                <h4 class="text-center">Mood-based Song Recommendations</h4>
+                <h1 class="text-center">Get Grooving</h1>
+                <form method="POST" class="text-center">
+                    <div class="form-group">
+                        <input type="text" name="user_input" class="form-control" placeholder="Enter your mood (e.g., happy, sad, angry)">
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">Get Recommendation</button>
+                </form>
+                <div class="mt-4">
+                    <h3 class="text-center">Recommended Song:</h3>
+                    <p class="text-center">{{ song }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
