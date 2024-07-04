@@ -1,0 +1,44 @@
+.full-page {
+    background-color: #c6e2ff;
+    font-family: Times New Roman, Baskerville;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.white-box {
+    background-color: #fff;
+    width: 600px; 
+    height: 600px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo img {
+    width: 200px;
+    height: 2000px;
+    margin-top: 20px;
+}
+
+h1, h4 {
+    color: #333;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.form-control {
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    border-color: #0056b3;
+}
